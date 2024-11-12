@@ -1,0 +1,43 @@
+Prueba técnica IA
+
+A continuación se presentarán 2 problemas, se debe proponer la solución técnica a alguno de estos problemas, estas soluciones deben ser construidas como API con las siguientes características.
+
+Debe ser escrita en python.
+Debe estar documentada.
+Debe contener prueba unitaria de alguna clase o función.
+La información que se entrega debe ser un diccionario con la siguiente estructura:
+{
+    "datapoints": [ 
+        {
+            "name": "datapoint name",
+            "value": "extracted value"
+        },
+        {
+            "name": "datapoint 2 name",
+            "value": "extracted value"
+        }
+    ]
+}
+
+
+
+ Los documentos necesarios para poder realizar esta prueba se encuentran en aquí.
+
+1.- Extracción de datapoints en identificación.
+
+Extraer los siguientes datos: 
+dm_lastname: apellidos
+dm_name: nombre
+dm_id_number: número de pasaporte
+dm_date: fecha de caducidad del documento 
+
+
+2.- Extracción de datapoints en solicitudes.
+
+El documento “2-solicitud” es un formato con varias secciones, es necesario extraer los siguientes datapoints de la sección de datos personales:
+dm_name: nombre
+dm_lastname: apellido paterno
+dm_second_lastname: apellido materno
+dm_address: dirección
+dm_address_number: numero exterior
+dm_phone_number: teléfono domicilio
